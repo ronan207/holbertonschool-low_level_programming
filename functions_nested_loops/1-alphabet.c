@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description print_alphabet by a new line
+ *
  * Always return 0 (Succes)
  */
 
