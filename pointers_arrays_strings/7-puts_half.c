@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * puts_half - Write a function that prints half of a string
- * @i : i is my first variable
- * @temp : temp is my second varibale
- *
+ * the fonction: puts_half - Write a function that prints half of a string
+ * len : len is my first variable
+ * temp : is my second varibale
+ * @str : is the argument
  */
 
 void puts_half(char *str)
-
 {
-	int i, temp;
+	int len = 0, temp;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
-	{
-		if (i % 2 == 0)
+	while (str[len] != '\0')
+		len++;
 
-		temp = i / 2;
+	if (len % 2 == 0)
 
-		else
+		temp = len / 2;
 
-			temp = (i - 1) / 2;
-	}
+	else
+
+		temp = (len - 1) / 2;
+
 	while (str[temp] != '\0')
 	{
 		_putchar(str[temp]);
